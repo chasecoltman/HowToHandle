@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>title</title>
+		<link rel="stylesheet" type="text/css" href="SWapi.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	</head>
+	<body>  
+	
+		<div id="outer-shell" align="center">
+			<div id="dropHead"><p id="dropHead">SWapi How-To Guide</p></div>
+			<div class="dropdown">
+				<button class="dropbtn">Dropdown</button>
+				<div class="dropdown-content">
+					<a href="index.html">Home</a>
+					<a href="pag1.html">Different Types of Data</a>
+					<a href="pag2.html">Handling JSON Requests</a>
+					<a href="pag3.html">Some Functionality</a>
+					<a href="pag4.html">Bonus Features</a>
+					<a href="end.html">End</a>
+				</div>
+			</div>
+		</div>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Handleing JSON Requests</h1>    
+			<p>In this section we will be discussing how to parse a JSON request</p> 		
+		</div>
+		<p>Now that we have all the information for star wars we would theoretically need at our fingertips, now we need to make it available to our 
+			clients who want to use it. What we need to do now is parse the JSON request into which variable we want to print out.</p>      
+		<p>This is another text. Take a look at the example below:</p>
+		<img src="imgs/query_all.png"></img>
+		<br><br><p>As you can see, we have some variables declared, so let's start there. </p>
+		<ul>
+			<li>The <b>type</b> variable in the example here is "GET" which means this is a GET request. We could do it via POST,
+			but for this example we will be using as it is much easier to work with.</li>
+			<li>The <b>baseURL</b> variable in the example is the base API address for making requests. We will add-on more to 
+			the address when we do things like searching. In our example we call it http://swapi.co/api/.</li>
+			<li>The <b>mode</b> variable is the mode of results we get from our request. </li>
+			<li>The <b>query</b> variable is the specific item we search for.</li>
+			<li>The <b>request</b> variable is creating a new XML HTTP request, and create our query combining the 
+			last few variables into into the parameters for .open
+		</ul>
+		
+		<p>Using all of these variables gives us the next line:</p>
+		<ul>
+			<li> request.open(type, baseURL + mode + query, true);
+		</ul>
+		<p>Without going into too much detail, what happens here is the function open needs 3 parameters. The first one is type, 
+		which in this example is GET. The second parameter that we pass is the url, which we create by combining the strings of baseURL,
+		mode, and query. The last is a boolean variable on whether to open the request or
+		not. Once all the variables are inserted correctly, it should look like:
+		<ul>
+			<li> request.open("GET", "http://swapi.co/api/people/10", true);
+		</ul>
+		<p>Ta-da! If you got this far then congratulations, but we still have some work to do. You should pat yourself on the back real quick though. Go ahead, I'll wait.</p>
+
+			<br><p>Next, we need add the simple addEventListener function, 
+		which allows us to do some stuff to our request. The response variable is what is going to be what contains our JSON request, which is parsed using the JSON.parse, 
+		and that is what we will manipulate in order 
+		to print out results and such. The rest is pretty basic stuff. 
+		<p>What you should see when you check the console log is:</p>
+		<img src="imgs/query_all_cons.png"></img>
+		<br><p>As you can see in console log, we have an Object with a bunch of variables in it that detail certain things about that Object. Next we will be discussing how to do some fun things 
+		with these JSON requests.</p>
+		<br>
+		<h1>Questions</h1>
+		<ol>
+		<li>What would you need to change in order to print a person's name to the console log?</li>
+		<li>What would you need to change in order to print a Planet to the console log? (Hint:  (Check the last page for all the modes available)</li>
+		</ol>
+		<P>The answers to these questions will be on the next page.</p>
+		<br><br>	
+		<div class="linkOuter">
+			<div id="back"><a href="pag1.html">Different Types of Data</a></div>
+			<div id="next"><a href="pag3.html">Some Functionality</a></div>
+		</div>
+	</div>
+
+		<br>	
+	</body>
+</html>

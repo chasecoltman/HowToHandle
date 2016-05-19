@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>title</title>
+		<link rel="stylesheet" type="text/css" href="SWapi.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	</head>
+	<body>  
+		
+		<div id="outer-shell" align="center">
+			<div id="dropHead"><p id="dropHead">SWapi How-To Guide</p></div>
+			<div class="dropdown">
+				<button class="dropbtn">Dropdown</button>
+				<div class="dropdown-content">
+					<a href="index.html">Home</a>
+					<a href="pag1.html">Different Types of Data</a>
+					<a href="pag2.html">Handling JSON Requests</a>
+					<a href="pag3.html">Some Functionality</a>
+					<a href="pag4.html">Bonus Features</a>
+					<a href="end.html">End</a>
+				</div>
+			</div>
+		</div>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Different Types o' Data </h1>  
+			<p>	Each time we make a request, we will recieve a long list of information about our request.</p>	
+		</div>
+
+
+  <p>This server contains lots of information about the Star Wars universe. This data is organized into 6 different catagories, all of which can be requested using JSon calls. The data that is on this server is as follows:</p>
+		<ul>
+			<li>Films</li>
+			<li>People</li>
+			<li>Species</li>
+			<li>Planets</li>
+			<li>Starships</li>
+			<li>Vehicles</li>
+		</ul>
+	<p>Most of this information is obtainable by first making the JSon Call for what kind of information, which when called in <a href="http://jsonlint.com/">JSon Lint</a>
+	<img src="imgs/luke.png">
+	<p>As you can see, the data is organized in a list of variable including strings, which we can search through, or arrays of other calls to the SWapi api. Of course, not all the types will be the same if we did a call for starships. Below is another example of a call to the api, but notice how 
+		the information has different variables.
+	</p>
+	<img src="imgs/tat.png">
+	<br><br>
+	<p>Each catagory has a different amount of information inside each one, which are usually only applicable to that catagory.
+	<p>Now that we have an understanding of what kind of data we have access to, lets have some fun with it.</p>
+	<div class="linkOuter">
+			<div id="back"><a href="home.html">Start Page</a></div>
+			<div id="next"><a href="pag2.html">Handling JSON Requests</a></div>
+		</div>
+	</div>
+	<br><br>
+	
+	
+	</body>
+</html>

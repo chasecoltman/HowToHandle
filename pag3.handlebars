@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>title</title>
+		<link rel="stylesheet" type="text/css" href="SWapi.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	</head>
+	<body>  
+	
+		<div id="outer-shell" align="center">
+			<div id="dropHead"><p id="dropHead">SWapi How-To Guide</p></div>
+			<div class="dropdown">
+				<button class="dropbtn">Dropdown</button>
+				<div class="dropdown-content">
+					<a href="index.html">Home</a>
+					<a href="pag1.html">Different Types of Data</a>
+					<a href="pag2.html">Handling JSON Requests</a>
+					<a href="pag3.html">Some Functionality</a>
+					<a href="pag4.html">Bonus Features</a>
+					<a href="end.html">End</a>
+				</div>
+			</div>
+		</div>
+	<div class="container">
+	<div class="jumbotron">
+		<h1>Some Functionality</h1>      
+		<p>Now that we have the data, we need to be able to manipulate and use that information for whatever our needs are. 
+		</p>
+	</div>
+	<ol>
+		<li>What would you need to change in order to print a person's name to the console log?</li>
+			<ul><li>Change console.log(respone) to console.log(respone.name). When you use just response, you log all of the contents of your query.</li></ul>
+		<li>What would you need to change in order to print a Planet to the console log? (Hint: (Check the last page for all the modes available)</li>
+			<ul><li>Change the mode variable to planets/ instead of people/</li></ul>
+	</ol>
+	<br>
+	<p>Now that we have the data, we need to use the data. One way we could use this data is to print it out into a table. Below is some example code that does just that:
+	<br>
+	<img src="imgs/html_table.png"></img>
+	<br><p>Some basic HTML, no real description needed. The IDs will be used for inserting information into that specific spot in the table</p><br>
+	<img src="imgs/js_table.png"></img>
+	<br><p>This is very similar to what we used earlier on the last page. As you can see, instead of writing to the console.log, we are writing to  the table 
+	by using document.getElementById, and using response.value to access specific variables in our Object. Below is the results as they appear to the user.
+	</p><br>
+	<img src="imgs/table_res.png"></img>
+	<br><br>
+	<p>Next, we will look at some of the cool features SWapi has. </p>      
+	<p></p>    
+		<div class="linkOuter">
+			<div id="back"><a href="pag2.html">Handling JSON Requests</a></div>
+			<div id="next"><a href="pag4.html">Bonus Features</a></div>
+		</div>
+	</div>
+
+	
+	
+	</body>
+</html>
